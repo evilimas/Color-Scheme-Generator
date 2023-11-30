@@ -69,11 +69,28 @@ body {
 /* Media */
 
 @media screen and (max-width: 500px) {
-  .color-container div {
+  .color-container {
     flex-direction: column;
   }
-  .color-container img {
+
+  .color-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .color-item img {
     height: 100px;
-    width: 300px;
+    width: 100%;
+  }
+
+  .color-item p {
+    white-space: nowrap; /* Prevent text from wrapping */
+    transform: rotate(-90deg); /* Rotate text */
+    transform-origin: 0 0; /* Set rotation origin to top left */
+    margin-left: 1em; /* Adjust margin for proper alignment */
+    margin-top: 5.5em;
+    width: 30px;
   }
 }
