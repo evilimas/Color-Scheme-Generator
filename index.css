@@ -65,3 +65,15 @@ body {
   font-weight: bold;
   background: white;
 }
+
+/* Media */
+
+@media screen and (max-width: 500px) {
+  .color-container div {
+    flex-direction: column;
+  }
+  .color-container img {
+    height: 100px;
+    width: 300px;
+  }
+}
