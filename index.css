@@ -86,10 +86,10 @@ body {
   }
 
   .color-item p {
-    white-space: nowrap; /* Prevent text from wrapping */
-    transform: rotate(-90deg); /* Rotate text */
-    transform-origin: 0 0; /* Set rotation origin to top left */
-    margin-left: 1em; /* Adjust margin for proper alignment */
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    margin-left: 1em;
     margin-top: 5.5em;
     width: 30px;
   }
