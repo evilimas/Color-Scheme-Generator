@@ -93,4 +93,17 @@ body {
     margin-top: 5.5em;
     width: 30px;
   }
+  .container-input {
+  }
+  .container-input input[type='color'] {
+  }
+
+  .container button {
+    padding: 1em 1.2em;
+    font-size: 0.7rem;
+  }
+  .container-input select {
+    width: 15rem;
+    border-radius: 0.4em;
+  }
 }
