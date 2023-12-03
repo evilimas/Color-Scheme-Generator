@@ -11,7 +11,7 @@ body {
 }
 .container {
   background: lightgray;
-  max-width: 550px;
+  width: 550px;
 }
 /* ----Header---inputs---- */
 .container-input {
@@ -23,7 +23,7 @@ body {
 .container-input input[type='color'] {
   border: none;
   width: 4em;
-  height: 2.5em;
+  height: 3.5em;
 }
 .container-input select {
   width: 17rem;
@@ -96,11 +96,12 @@ body {
   .container-input {
   }
   .container-input input[type='color'] {
+    height: 4em;
   }
 
   .container button {
-    padding: 1em 1.2em;
-    font-size: 0.7rem;
+    padding: 1em 1.3em;
+    font-size: 1rem;
   }
   .container-input select {
     width: 15rem;
