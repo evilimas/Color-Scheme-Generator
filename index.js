@@ -3,11 +3,12 @@ const btn = document.getElementById('btn');
 const optionsEl = document.getElementById('options-el');
 const colorContainer = document.getElementById('color-container');
 
+// ---Generate colors btn event listener  ---
 btn.addEventListener('click', function () {
   generateColors();
 });
 
-// ---Function to generate Colors---
+// ---Function to fetch generate Colors---
 
 function generateColors() {
   const color = colorEl.value.replace('#', '');

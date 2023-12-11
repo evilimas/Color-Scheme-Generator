@@ -62,7 +62,7 @@ body {
   background: white;
 }
 
-/* Media */
+/* Media queries */
 
 @media screen and (max-width: 500px) {
   .color-container {
