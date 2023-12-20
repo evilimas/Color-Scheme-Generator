@@ -18,28 +18,14 @@ function generateColors() {
   )
     .then((response) => response.json())
     .then((data) => {
-      colorContainer.innerHTML = `
-      <div class="color-item">
-      <img src="${data.colors[0].image.bare}">
-      <p>${data.colors[0].hex.value}</p>
-    </div>
-    <div class="color-item">
-      <img src="${data.colors[1].image.bare}">
-      <p>${data.colors[1].hex.value}</p>
-    </div>
-    <div class="color-item">
-      <img src="${data.colors[2].image.bare}">
-      <p>${data.colors[2].hex.value}</p>
-    </div>
-    <div class="color-item">
-      <img src="${data.colors[3].image.bare}">
-      <p>${data.colors[3].hex.value}</p>
-    </div>
-    <div class="color-item">
-      <img src="${data.colors[4].image.bare}">
-      <p>${data.colors[4].hex.value}</p>
-    </div>
-        `;
+      const colorsArr = data.colors;
+      colorsArr.forEach((color) => {
+        colorContainer.innerHTML += `
+         <div class="color-item">
+        <img src="${color.image.bare}">
+        <p>${color.hex.value}</p>
+      </div>`;
+      });
     });
 }
 

@@ -64,7 +64,7 @@ body {
 
 /* Media queries */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
   .color-container {
     flex-direction: column;
   }
@@ -95,6 +95,7 @@ body {
   }
   .container-input input[type='color'] {
     height: 3em;
+    width: 3em;
   }
 
   .container button {
