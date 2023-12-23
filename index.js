@@ -22,7 +22,7 @@ function generateColors() {
       colorsArr.forEach((color) => {
         colorContainer.innerHTML += `
          <div class="color-item">
-        <img src="${color.image.bare}">
+        <img src="${color.image.bare}" alt="${color.hex.value}">
         <p>${color.hex.value}</p>
       </div>`;
       });
